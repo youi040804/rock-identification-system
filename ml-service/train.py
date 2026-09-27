@@ -4,6 +4,7 @@ from pathlib import Path
 import copy
 import random
 import time
+import os
 
 import numpy as np
 import torch
@@ -21,17 +22,11 @@ from config import ROCK_NAMES, NUM_CLASSES
 
 BASE_DIR = Path(__file__).resolve().parent
 
-DATA_DIR = (
-    BASE_DIR.parent
-    / "code"
-    / "backend"
-    / "dida_rock"
-    / "src"
-    / "main"
-    / "resources"
-    / "static"
-    / "cnnpythonproject"
-    / "rock_images"
+DATA_DIR = Path(
+    os.getenv(
+        "ROCK_DATASET_DIR",
+        BASE_DIR / "data" / "rock_images",
+    )
 )
 
 OUTPUT_MODEL_PATH = (
