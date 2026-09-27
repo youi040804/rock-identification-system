@@ -1,0 +1,65 @@
+# ==============================
+# IDE / OS
+# ==============================
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Java / Gradle
+# ==============================
+.gradle/
+**/build/
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+
+# ==============================
+# Android
+# ==============================
+local.properties
+*.apk
+*.aab
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ==============================
+# Python
+# ==============================
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# ==============================
+# Secrets / Local Configuration
+# ==============================
+.env
+.env.*
+!.env.example
+
+application-local.properties
+application-secret.properties
+secrets.properties
+
+# ==============================
+# Runtime Files
+# ==============================
+uploads/
+temp/
+tmp/
+
+# ==============================
+# ML datasets / experimental models
+# ==============================
+rock_images/
+test_rock_images/
+
+ml-service/models/*.pth
+!ml-service/models/best_rock_model_v2.pth

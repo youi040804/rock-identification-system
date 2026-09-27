@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/lifan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="辉长岩"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:padding="16dp"
+        android:background="#BBDEFB"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/iv_rock_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/rock_image_huichangyan"
+        android:contentDescription="辉长岩"
+        android:scaleType="centerCrop"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:text="@string/huichangyan_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- 1. 上方内容容器：通过权重占满导航栏上方的所有空间 -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_model_management_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="模型管理"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:padding="16dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 模型参数输入框 -->
+    <EditText
+        android:id="@+id/et_learning_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="学习率"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_batch_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="批量大小"
+        android:inputType="number"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_epochs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="迭代次数"
+        android:inputType="number"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 功能按钮 -->
+    <Button
+        android:id="@+id/btn_modify_parameters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改参数"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_user_feedback_management"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户反馈管理"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 修正：原LinearLayout高度241dp可能导致空白，改为wrap_content自适应 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_training_set_supplement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="训练集补充"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <!-- 2. 导航栏：固定在底部，不受上方内容影响 -->
+    <include
+        android:id="@+id/menu_bottom"
+        layout="@layout/menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+</LinearLayout>

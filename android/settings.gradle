@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        // 华为云镜像（优先）
+        maven { url 'https://repo.huaweicloud.com/repository/maven/' }
+        maven { url 'https://repo.huaweicloud.com/repository/google/' } // 对应 google()
+        // 备份：官方仓库（镜像不可用时自动降级）
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        // 华为云镜像（优先）
+        maven { url 'https://repo.huaweicloud.com/repository/maven/' } // 替代 Maven Central/JCenter
+        maven { url 'https://repo.huaweicloud.com/repository/google/' } // 替代 google()
+        maven { url 'https://repo.huaweicloud.com/repository/jcenter/' } // 如需 JCenter 依赖（部分老项目）
+        // 备份：官方仓库
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // 如需 JitPack 依赖（如自定义开源库）
+    }
+}
+rootProject.name = "Rock"
+include ':app'

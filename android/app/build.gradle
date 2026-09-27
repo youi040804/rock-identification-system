@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android' // 保留，项目里可能有 Kotlin
+}
+
+android {
+    namespace 'com.itgu.rock'
+    compileSdk 33
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId "com.itgu.rock"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"   // 或者 17，绝对不要写 21
+    }
+}
+
+dependencies {
+    // RxJava
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.13'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+
+    // Retrofit and OkHttp
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
+
+    // Glide（推荐用 Maven，而不是 libs 里的 aar）
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.15.1'
+
+    // UI Libraries
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Lifecycle
+    implementation "androidx.lifecycle:lifecycle-runtime:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1"
+
+    // Kotlin 标准库（防止版本冲突）
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+    // Matisse 多图选择器
+    implementation 'com.zhihu.android:matisse:0.5.3-beta3'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}

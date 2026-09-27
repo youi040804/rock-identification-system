@@ -1,0 +1,32 @@
+<resources>
+    <item name="action_cancel" type="id"/>
+    <item name="from_gallery" type="id"/>
+    <item name="action_take_photo" type="id"/>
+    <item name="rb_msg" type="id"/>
+    <item name="rb_people" type="id"/>
+    <item name="rb_find" type="id"/>
+    <item name="rb_me" type="id"/>
+    <item name="tv_gravel_name" type="id"/>
+    <item name="iv_gravel_image" type="id"/>
+    <item name="btn_delete_gravel" type="id"/>
+    <item name="btn_add_gravel_to_dataset" type="id"/>
+    <item name="flImagePicker" type="id"/>
+    <item name="tvFeedbackTitle" type="id"/>
+    <item name="ivSelectImage" type="id"/>
+    <item name="tvPickImageHint" type="id"/>
+    <item name="etRockName" type="id"/>
+    <item name="btnSubmit" type="id"/>
+    <item name="btnReturn" type="id"/>
+    <item name="buchong" type="id"/>
+    <item name="tuichu" type="id"/>
+    <item name="et_rock_name" type="id"/>
+    <item name="rv_images" type="id"/>
+    <item name="et_old_password" type="id"/>
+    <item name="et_new_password" type="id"/>
+    <item name="et_confirm_password" type="id"/>
+    <item name="btn_submit" type="id"/>
+    <item name="fan" type="id"/>
+    <item name="tv_feedback_management_title" type="id"/>
+    <item name="recycler_feedback" type="id"/>
+
+</resources>

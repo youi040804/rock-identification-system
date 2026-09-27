@@ -1,0 +1,372 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EFEFEF">
+
+    <TextView
+        android:id="@+id/tv_knowledge_base_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="岩石知识库"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:padding="20dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- 砾岩 -->
+            <TextView
+                android:id="@+id/tv_gravel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:background="#FFCDD2"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="12dp"
+                android:text="砾岩"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_andesite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="安山岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#C8E6C9"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_granite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="花岗岩"
+                android:layout_marginBottom="8dp"
+                android:background="#BBDEFB"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="12dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_limestone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="石灰岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#FFE0B2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_quartzite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="石英岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#D1C4E9"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_slate1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="板岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#FFAB91"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_shale2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="页岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#BCAAA4"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_basalt3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="玄武岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#B0BEC5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 新增20种岩石条目 -->
+            <!-- 1. 角砾岩 -->
+
+            <!-- 2. 碳酸盐岩 -->
+
+            <TextView
+                android:id="@+id/tv_breccia"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:background="#F48FB1"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="12dp"
+                android:text="角砾岩"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tv_carbonate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="碳酸盐岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#FFD54F"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 3. 硅质岩 -->
+            <TextView
+                android:id="@+id/tv_siliceous_rock"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="硅质岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#FFECB3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 4. 杂积岩（注：地质中无此标准名称，此处按用户要求保留） -->
+            <TextView
+                android:id="@+id/tv_ermashi"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="杂积岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#C5CAE9"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 5. 白云石 -->
+            <TextView
+                android:id="@+id/tv_dolomite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="白云石"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#E0E0E0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 6. 燧石 -->
+            <TextView
+                android:id="@+id/tv_chert"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="燧石"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#A5D6A7"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 7. 辉长岩 -->
+            <TextView
+                android:id="@+id/tv_gabbro"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="辉长岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#80CBC4"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 8. 片麻岩 -->
+            <TextView
+                android:id="@+id/tv_gneiss"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="片麻岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#90CAF9"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 9. 角页岩 -->
+            <TextView
+                android:id="@+id/tv_hornfels"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="角页岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#FFCCBC"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 11. 大理岩 -->
+            <TextView
+                android:id="@+id/tv_marble"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="大理岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#FFE0B2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 12. 泥岩 -->
+            <TextView
+                android:id="@+id/tv_mudstone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="泥岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#B2EBF2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 13. 油页岩 -->
+            <TextView
+                android:id="@+id/tv_oil_shale"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="油页岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#FFCDD2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 14. 鲕粒岩 -->
+            <TextView
+                android:id="@+id/tv_oolite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="鲕粒岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#C8E6C9"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 15. 伟晶岩 -->
+            <TextView
+                android:id="@+id/tv_pegmatite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="伟晶岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#D7CCC8"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 16. 千枚岩 -->
+            <TextView
+                android:id="@+id/tv_phyllite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="千枚岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#E0F7FA"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 17. 斑岩 -->
+            <TextView
+                android:id="@+id/tv_porphyry"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="斑岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#FFE0B2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 18. 辉岩 -->
+            <TextView
+                android:id="@+id/tv_pyroxenite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="辉岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#F8BBD0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 19. 流纹岩 -->
+            <TextView
+                android:id="@+id/tv_rhyolite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="流纹岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#ECEFF1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 20. 砂岩 -->
+            <TextView
+                android:id="@+id/tv_sandstone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="砂岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#E6EE9C"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 21. 蛇纹岩 -->
+            <TextView
+                android:id="@+id/tv_serpentinite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="蛇纹岩"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#B3E5FC"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/menu_bottom"
+        layout="@layout/menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+</LinearLayout>

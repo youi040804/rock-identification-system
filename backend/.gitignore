@@ -1,0 +1,82 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+application-local.properties
+application-secret.properties
+secrets.properties
+
+
+# =========================
+# Python
+# =========================
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+
+# =========================
+# Runtime uploaded files
+# =========================
+src/main/resources/static/cnnpythonproject/upload/*
+src/main/resources/static/cnnpythonproject/test_rock_images/*
+src/main/feedback_image/*
+src/main/temp_training_set/*
+useravatar/*
+
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db

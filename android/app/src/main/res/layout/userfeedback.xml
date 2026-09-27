@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/tvFeedbackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户反馈界面"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- 图片选择框 -->
+    <FrameLayout
+        android:id="@+id/flImagePicker"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tvFeedbackTitle"
+        android:layout_marginTop="16dp"
+        android:padding="16dp">
+
+        <!-- 背景图片 -->
+        <ImageView
+            android:id="@+id/ivSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="选择图片"
+            android:background="@drawable/imageview_border"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:id="@+id/llImagePickerOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/camer"
+                android:clickable="false"
+                android:focusable="false"/>
+
+            <TextView
+                android:id="@+id/tvPickImageHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击选择图片"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- 输入框：岩石名 -->
+    <EditText
+        android:id="@+id/etRockName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flImagePicker"
+        android:layout_marginTop="20dp"
+        android:hint="岩石名"
+        android:padding="12dp"/>
+
+    <!-- 提交按钮 -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRockName"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:text="提交"/>
+
+    <!-- 返回按钮 -->
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRockName"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="返回"/>
+
+</RelativeLayout>
